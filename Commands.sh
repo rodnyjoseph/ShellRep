@@ -24,7 +24,7 @@ elif [ $choice = "delete" ]; then
 	read rfile
 	cd ~
 	cd workspace
-	rm $rfile
+	rmdir $rfile
 else
     echo "Goodbye!"
 fi
