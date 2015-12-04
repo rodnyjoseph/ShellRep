@@ -22,7 +22,7 @@ if [ $choice = "create" ]; then
 	cd ~
     mkdir $sfile
 
-elif [ $choice = "create" ]; then
+elif [ $choice = "delete" ]; then
     echo "Name of file to remove:"
 	read rfile
 	cd ~
