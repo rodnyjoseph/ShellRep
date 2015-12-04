@@ -1,7 +1,7 @@
 # create a directory 
 mkdir -p my_gifs/gifs/
 
-echo -e "Please enter your name: "
+echo "Please enter your name: "
 read name
 echo "Nice to meet you $name"
 
@@ -16,7 +16,7 @@ sleep 1
 echo "Your command: "
 read saveResponse
 
-if $saveResponse = "create" ; then
+if ["$saveResponse" = "create"] ; then
 	echo "File Name:"
 	read sfile
     mkdir $sfile
