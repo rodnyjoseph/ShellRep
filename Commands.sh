@@ -19,11 +19,13 @@ read choice
 if [ $choice = "create" ]; then
 	echo "File Name:"
 	read sfile
+	cd ~
     mkdir $sfile
 
-elif $choice = "delete" ; then
+elif [ $choice = "create" ]; then
     echo "Name of file to remove:"
 	read rfile
+	cd ~
 	rm $rfile
 else
     echo "Goodbye!"
