@@ -12,7 +12,6 @@ sleep 1
 echo "to Create, type create"
 echo "To delete, type delete"
 echo "To exit, type any other key/s"
-sleep 1
 echo "Your command: "
 read choice
 
@@ -20,12 +19,14 @@ if [ $choice = "create" ]; then
 	echo "File Name:"
 	read sfile
 	cd ~
+	cd ..
     mkdir $sfile
 
 elif [ $choice = "delete" ]; then
     echo "Name of file to remove:"
 	read rfile
 	cd ~
+	cd ..
 	rm $rfile
 else
     echo "Goodbye!"
