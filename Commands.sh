@@ -14,15 +14,14 @@ echo "To delete, type delete"
 echo "To exit, type any other key/s"
 sleep 1
 echo "Your command: "
-read saveResponse
+read choice
 
-
-if "saveResponse" = "create" ; then
+if [ $choice = "create" ]; then then
 	echo "File Name:"
 	read sfile
     mkdir $sfile
 
-elif $saveResponse = "delete" ; then
+elif $choice = "delete" ; then
     echo "Name of file to remove:"
 	read rfile
 	rm $rfile
