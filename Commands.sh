@@ -16,7 +16,7 @@ sleep 1
 echo "Your command: "
 read choice
 
-if [ $choice = "create" ]; then then
+if [ $choice = "create" ]; then
 	echo "File Name:"
 	read sfile
     mkdir $sfile
