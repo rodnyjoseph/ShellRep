@@ -1,8 +1,11 @@
 # ShellRep
 
 ** A script to create or delete files in your workspace!" **
+
 ** To Run: **
+
 **git clone https://github.com/rodnyjoseph/ShellRep.git **
+
 ** cd into ShellRep and sh Commands **
 
 
