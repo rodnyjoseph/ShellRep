@@ -16,7 +16,9 @@ sleep 1
 echo "Your command: "
 read saveResponse
 
-if ["$saveResponse" = "create"] ; then
+create = create
+
+if "$saveResponse" = create ; then
 	echo "File Name:"
 	read sfile
     mkdir $sfile
