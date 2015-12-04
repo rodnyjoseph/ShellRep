@@ -19,14 +19,14 @@ if [ $choice = "create" ]; then
 	echo "File Name:"
 	read sfile
 	cd ~
-	cd ..
+	cd workspace
     mkdir $sfile
 
 elif [ $choice = "delete" ]; then
     echo "Name of file to remove:"
 	read rfile
 	cd ~
-	cd ..
+	cd workspace
 	rm $rfile
 else
     echo "Goodbye!"
